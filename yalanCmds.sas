@@ -1,0 +1,2 @@
+%rdsYalan (stopDaemon);
+
