@@ -1,7 +1,7 @@
 %let YalanPath = %str(C:\Users\&sysuserid.\Yalan);
 filename yalanmac "&YalanPath.";
 options sasautos=(sasautos yalanmac);
-*options mprint source source2 notes;
+options mprint source source2 notes;
 
 %macro rdsStartYalan;
 
@@ -15,7 +15,7 @@ options sasautos=(sasautos yalanmac);
   *
   *  === License
   *
-  *   Copyright (c) 2005 KYBEIDOS GmbH (www.kybeidos.de)
+  *   Copyright (c) 2005-2016 KYBEIDOS GmbH (www.kybeidos.de)
   *
   *   This program is free software; you can redistribute it and/or
   *   modify it under the terms of the GNU General Public License as
@@ -77,7 +77,7 @@ options sasautos=(sasautos yalanmac);
 
 /*
 %* To test single Yalan macros proceed as follows;
-%* ... include changed macros as needed;
+%* ... include changed macros as needed, i.e.;
 %include "&YalanPath.\rdsLogReaderSAS.sas";
 %include "&YalanPath.\rdsLRSASMessages.sas";
 %* ... read a single log file to test your changes;
